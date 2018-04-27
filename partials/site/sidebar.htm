@@ -1,0 +1,64 @@
+[blogPosts]
+postsPerPage = "5"
+categoryPage = "blog/category"
+postPage = "blog/post"
+sortOrder = "published_at desc"
+==
+
+<section class="sidebar-section">
+	<h2 class="sidebar-section-title">Recent Posts</h2>
+	<ul class="nav-items">
+		{% for post in blogPosts.posts %}
+			<li class="nav-item">
+				<a class="nav-item-link" href="{{post.url}}">{{post.title}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>
+
+<section class="sidebar-section">
+	<h2 class="sidebar-section-title">Keep Posted</h2>
+	<ul class="nav-items">
+		<li class="nav-item-link"><a class="nav-item-link" href="{{'blog/rss'|page}}"><abbr title="Really Simple Syndication Feed for News Readers">RSS Feed</abbr></a></li>
+	</ul>
+</section>
+{% if this.theme.other_url %}
+	<section class="sidebar-section">
+		<h2 class="sidebar-section-title">About Me</h2>
+		<ul class="nav-items">
+			<li class="nav-item"><a href="{{this.theme.other_url}}" class="nav-item-link" target="_blank">{{this.theme.site_name}}</a></li>
+			{% if this.theme.other_url_about %}
+				<li class="nav-item"><a href="{{this.theme.other_url_about}}" class="nav-item-link" target="_blank">About</a></li>
+			{% endif %}
+			{% if this.theme.other_url_resume %}
+				<li class="nav-item"><a href="{{this.theme.other_url_resume}}" class="nav-item-link" target="_blank">Resume</a></li>
+			{% endif %}
+			{% if this.theme.other_url_projects %}
+				<li class="nav-item"><a href="{{this.theme.other_url_projects}}" class="nav-item-link" target="_blank">Projects</a></li>
+			{% endif %}
+		</ul>
+	</section>
+{% endif %}
+<section class="sidebar-section">
+	<h2 class="sidebar-section-title">Follow Me</h2>
+	<ul class="social-links">
+		{% if this.theme.twitter_url %}
+			<li class="social-link"><a href="{{this.theme.twitter_url}}" target="_blank">Twitter</a></li>
+		{% endif %}
+		{% if this.theme.facebook_url %}
+			<li class="social-link"><a href="{{this.theme.facebook_url}}" target="_blank">Facebook</a></li>
+		{% endif %}
+		{% if this.theme.github_url %}
+			<li class="social-link"><a href="{{this.theme.github_url}}" target="_blank">GitHub</a></li>
+		{% endif %}
+		{% if this.theme.linkedin_url %}
+			<li class="social-link"><a href="{{this.theme.linkedin_url}}" target="_blank">LinkedIn</a></li>
+		{% endif %}
+		{% if this.theme.soundcloud_url %}
+			<li class="social-link"><a href="{{this.theme.soundcloud_url}}" target="_blank">Soundcloud</a></li>
+		{% endif %}
+		{% if this.theme.youtube_url %}
+			<li class="social-link"><a href="{{this.theme.youtube_url}}" target="_blank">YouTube</a></li>
+		{% endif %}
+	</ul>
+</section>

@@ -1,0 +1,46 @@
+title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "default"
+description = "Viewing a single blog post"
+hidden = "0"
+
+[blogPost]
+slug = "{{:slug}}"
+categoryPage = "blog/category"
+==
+<?php
+	function onEnd() {
+		if ($this->post) {
+			$this->page->title = $this->post->title;
+		}
+		else {
+			return Redirect::to($this->pageUrl("404"));
+		}
+	}
+?>
+==
+
+{% set image = post.featured_images.first %}
+{% set nextPost = blogPost.nextPost %}
+{% set lastPost = blogPost.previousPost %}
+
+<div class="post-container full">
+	{% partial "blog/post" post=post %}
+	{% if lastPost or nextPost %}
+		<aside role="complementary" aria-labelledby="complimentary-posts-title">
+			<h3 id="complimentary-posts-title">Other Related Posts</h3>
+			<ul class="posts related">
+				{% if lastPost %}
+					<li class="post-container">
+						<a href="{{lastPost.url}}">{{lastPost.title}}</a>
+					</li>
+				{% endif %}
+				{% if nextPost %}
+					<li class="post-container">
+						<a href="{{nextPost.url}}">{{nextPost.title}}</a>
+					</li>
+				{% endif %}
+			</ul>
+		</aside>
+	{% endif %}
+</div>

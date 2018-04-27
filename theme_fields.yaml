@@ -1,0 +1,76 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    site_name:
+        label: Site name
+        comment: The website name as it should appear on the front-end
+        default: Blogz
+        span: auto
+
+    site_motto:
+        label: Site motto
+        comment: A short statement about the website
+        default: Simple is better
+        span: auto
+
+    facebook_url:
+        label: Facebook URL
+        span: auto
+        default: https://www.facebook.com/
+
+    twitter_url:
+        label: Twitter URL
+        span: auto
+        default: https://www.twitter.com/
+
+    github_url:
+        label: Github URL
+        span: auto
+        default: https://github.com/
+
+    linkedin_url:
+        label: LinkedIn URL
+        span: auto
+        default: https://linkedin.com/
+
+    soundcloud_url:
+        label: SoundCloud URL
+        span: auto
+        default: https://soundcloud.com/
+
+    youtube_url:
+        label: YouTube URL
+        span: auto
+        default: https://youtube.com/
+
+    public_email:
+        label: "Public E-mail Address"
+        default: "someone@gmail.com"
+
+    other_url:
+        label: Alternative Website
+        span: auto
+
+    other_url_about:
+        label: About URL
+        span: auto
+
+    other_url_resume:
+        label: Resume URL
+        span: auto
+
+    other_url_projects:
+        label: Projects URL
+        span: auto
+
+    body_background_colour:
+        label: Body Background Colour
+        type: colorpicker
+        assetVar: "bodyBackgroundColour"
+
+    text_colour:
+        label: Text Colour
+        type: colorpicker
+        assetVar: "textColour"

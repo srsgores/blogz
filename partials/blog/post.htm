@@ -1,0 +1,47 @@
+{% set image = post.featured_images.first %}
+<article class="post">
+	<header class="post-header">
+		<h1 class="post-title">
+			{% if summary %}
+				<a href="{{post.url}}">{{post.title}}</a>
+			{% else %}
+				{{post.title}}
+			{% endif %}
+		</h1>
+		{% if image %}
+			<figure class="post-image">
+				<figcaption class="visuallyhidden">{{post.title}}</figcaption>
+				<a href="{{post.url}}">
+					<img src="{{image.path}}" alt="{{post.title}}"/>
+				</a>
+			</figure>
+		{% endif %}
+	</header>
+
+	<div class="post-content {{summary ? ' summary' : ' full' }}">
+		{% if summary %}
+			{{post.summary|raw}}
+		{% else %}
+			{{post.content_html|raw}}
+		{% endif %}
+	</div>
+
+	{% if not summary %}
+		<footer class="post-meta-container">
+			<dl class="post-meta">
+				<dt>Author</dt>
+				<dd>{{post.author.full_name}}</dd>
+				<dt>Published</dt>
+				<dd>{{post.published_at|date("M d, Y")}}</dd>
+				<dt>Categories</dt>
+				<dd>
+					{% if post.categories.count %}
+						{% for category in post.categories %}
+							<a href="{{category.url}}">{{category.name}}</a>{% if not loop.last %}, {% endif %}
+						{% endfor %}
+					{% endif %}
+				</dd>
+			</dl>
+		</footer>
+	{% endif %}
+</article>

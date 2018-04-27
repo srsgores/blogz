@@ -1,0 +1,37 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html lang="en-ca" class="no-js">
+	<head>
+		{% partial "site/meta" %}
+	</head>
+	<body role="document" itemscope itemtype="http://schema.org/WebPage">
+		<!-- Accessibility levels -->
+		<meta itemprop="accessibilityControl" content="fullKeyboardControl">
+		<meta itemprop="accessibilityControl" content="fullMouseControl">
+		<meta itemprop="accessibilityHazard" content="noFlashingHazard">
+		<meta itemprop="accessibilityHazard" content="noMotionSimulationHazard">
+		<meta itemprop="accessibilityHazard" content="noSoundHazard">
+		<meta itemprop="accessibilityAPI" content="ARIA">
+		<a href="#main-content" class="visuallyhidden">Skip to main content</a>
+		<!-- Header -->
+		<header id="layout-header" role="banner" aria-label="Site Banner">
+			{% partial "site/header" %}
+			<!-- Sidebar -->
+			<nav id="layout-sidebar" role="navigation" aria-label="Site Navigation">
+				{% partial "site/sidebar" %}
+			</nav>
+		</header>
+		<!-- Content -->
+		<main role="main" aria-label="Main Content" id="main-content">
+			{% page %}
+		</main>
+
+		<!-- Footer -->
+		<footer id="layout-footer" role="contentinfo" aria-label="Site Footer">
+			{% partial "site/footer" %}
+		</footer>
+		<!-- Scripts -->
+		{% partial "site/scripts" %}
+	</body>
+</html>

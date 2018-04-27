@@ -1,0 +1,8 @@
+name: Blogz
+description: "A simple starting point for a blogger, with accessibility in mind"
+author: "Sean Goresht"
+homepage: "https://seangoresht.com"
+code: Blogz
+form: theme_fields.yaml
+require:
+    - RainLab.Blog
