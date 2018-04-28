@@ -28,3 +28,8 @@
 [role="main"] {
 	@extend %flexed;
 }
+.post-container {
+	&:nth-of-type(2n) {
+		background: $bodyBackgroundColour - 7.5;
+	}
+}
