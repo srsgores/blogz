@@ -23,11 +23,17 @@
 		p {
 			font-size: $contentFontSize;
 		}
-		em, i {
+		em, i, q {
 			font-style: italic;
 		}
 		strong, b {
 			font-weight: bold;
+		}
+		blockquote {
+			margin: 1.5em 0;
+			padding: 0 1.5em;
+			box-sizing: border-box;
+			border-left: 0.25em solid;
 		}
 		* {
 			~ p {
@@ -77,7 +83,7 @@
 		}
 
 		figcaption {
-			font-style:italic;
+			font-style: italic;
 			margin-top: 1em;
 			font-size: 85%;
 		}
