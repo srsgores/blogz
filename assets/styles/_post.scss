@@ -47,6 +47,9 @@
 
 		ul, ol {
 			padding: $contentPadding;
+			li + li {
+				margin-top: 1em;
+			}
 		}
 
 		ul {
