@@ -74,3 +74,48 @@ fields:
         label: Text Colour
         type: colorpicker
         assetVar: "textColour"
+
+    sidebar_background_colour:
+        label: Sidebar Background Colour
+        type: colorpicker
+        assetVar: "sidebarBackgroundColour"
+
+    sidebar_text_colour:
+        label: Sidebar Text Colour
+        type: colorpicker
+        assetVar: "sidebarTextColour"
+
+    sidebar_link_colour:
+        label: Sidebar Link Colour
+        type: colorpicker
+        assetVar: "sidebarLinkColour"
+
+    main_content_text_colour:
+        label: Main Content Text Colour
+        type: colorpicker
+        assetVar: "mainContentTextColour"
+
+    link_text_hover_colour:
+        label: Link Text Hover Colour
+        type: colorpicker
+        assetVar: "linkTextHoverColour"
+
+    link_text_focus_colour:
+        label: Link Text Focus Colour
+        type: colorpicker
+        assetVar: "linkTextFocusColour"
+
+    post_text_colour:
+        label: Post Text Colour
+        type: colorpicker
+        assetVar: "postTextColour"
+
+    post_title_colour:
+        label: Post Title Colour
+        type: colorpicker
+        assetVar: "postTitleColour"
+
+    social_link_colour:
+        label: Social Link Colour
+        type: colorpicker
+        assetVar: "socialLinkColour"
