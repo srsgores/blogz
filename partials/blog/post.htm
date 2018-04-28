@@ -29,18 +29,20 @@
 	{% if not summary %}
 		<footer class="post-meta-container">
 			<dl class="post-meta">
-				<dt>Author</dt>
-				<dd>{{post.author.full_name}}</dd>
+				{% if post.author.full_name %}
+					<dt>Author</dt>
+					<dd>{{post.author.full_name}}</dd>
+				{% endif %}
 				<dt>Published</dt>
-				<dd>{{post.published_at|date("M d, Y")}}</dd>
-				<dt>Categories</dt>
-				<dd>
-					{% if post.categories.count %}
+				<dd><time datetime="{{post.published_at|date("Y-m-d")}}">{{post.published_at|date("M d, Y")}}</time></dd>
+				{% if post.categories.count %}
+					<dt>Categories</dt>
+					<dd>
 						{% for category in post.categories %}
 							<a href="{{category.url}}">{{category.name}}</a>{% if not loop.last %}, {% endif %}
 						{% endfor %}
-					{% endif %}
-				</dd>
+					</dd>
+				{% endif %}
 			</dl>
 		</footer>
 	{% endif %}
