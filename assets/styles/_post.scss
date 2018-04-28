@@ -1,6 +1,18 @@
 .post {
+	&-title {
+		font-size: 3em;
+		margin: 0.5em 0;
+	}
 	&-content {
 		line-height: $lineHeight * 1.1;
+		font-size: $contentFontSize;
+
+		code, pre {
+			font-family: "Source Code Pro", "Courier New", monospace;
+		}
+		pre {
+			margin: 1em 0;
+		}
 		p ~ * {
 			margin-top: 1em;
 		}

@@ -157,7 +157,7 @@ fields:
         label: Body Font Size
         type: text
         comment: "Base font size - recommend em or %"
-        default: "1.3em"
+        default: "100%"
         assetVar: "fontSize"
 
     content_font_size:
@@ -165,6 +165,7 @@ fields:
         label: Content Area Font Size
         type: text
         assetVar: "contentFontSize"
+        default: "1.15em"
 
     line_height:
         tab: Assets
