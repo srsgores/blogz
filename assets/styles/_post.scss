@@ -1,0 +1,37 @@
+.post {
+	&-content {
+		line-height: $lineHeight * 1.1;
+		p ~ * {
+			margin-top: 1em;
+		}
+
+		ul {
+			list-style-type: circle;
+		}
+
+		@media screen and (min-width: 55em) {
+			ul {
+				padding: 1.5em;
+			}
+		}
+		h1, h2, h3, h4, h5, h6 {
+			line-height: 3;
+		}
+		h2 {
+			font-size: 250%;
+		}
+
+		h3 {
+			font-size: 220%;
+		}
+
+		h4 {
+			font-size: 190%;
+		}
+
+		figcaption {
+			font-style:italic;
+			margin-top: 1em;
+		}
+	}
+}
