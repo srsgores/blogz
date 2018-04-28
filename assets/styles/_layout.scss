@@ -6,6 +6,14 @@
 .site-wrapper {
 	@extend %flex-container;
 }
+.site-name {
+	font-size: 2.5em;
+}
+
+.header-container {
+	text-align: center;
+	line-height: 2;
+}
 
 %flexed {
 	flex: 1;

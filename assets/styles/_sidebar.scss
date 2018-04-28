@@ -1,0 +1,12 @@
+.sidebar {
+	background: $bodyBackgroundColour - 20;
+	box-sizing: border-box;
+	padding: 1.5em;
+	&-section {
+		margin: 2.5em 0;
+		&-title {
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+	}
+}
