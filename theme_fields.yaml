@@ -4,118 +4,177 @@
 
 fields:
     site_name:
+        tab: Info
         label: Site name
         comment: The website name as it should appear on the front-end
         default: Blogz
         span: auto
 
     site_motto:
+        tab: Info
         label: Site motto
         comment: A short statement about the website
         default: Simple is better
         span: auto
 
     facebook_url:
+        tab: Info
         label: Facebook URL
         span: auto
         default: https://www.facebook.com/
 
     twitter_url:
+        tab: Info
         label: Twitter URL
         span: auto
         default: https://www.twitter.com/
 
     github_url:
+        tab: Info
         label: Github URL
         span: auto
         default: https://github.com/
 
     linkedin_url:
+        tab: Info
         label: LinkedIn URL
         span: auto
         default: https://linkedin.com/
 
     soundcloud_url:
+        tab: Info
         label: SoundCloud URL
         span: auto
         default: https://soundcloud.com/
 
     youtube_url:
+        tab: Info
         label: YouTube URL
         span: auto
         default: https://youtube.com/
 
     public_email:
+        tab: Info
         label: "Public E-mail Address"
         default: "someone@gmail.com"
 
     other_url:
+        tab: Info
         label: Alternative Website
         span: auto
 
     other_url_about:
+        tab: Info
         label: About URL
         span: auto
 
     other_url_resume:
+        tab: Info
         label: Resume URL
         span: auto
 
     other_url_projects:
+        tab: Info
         label: Projects URL
         span: auto
 
     body_background_colour:
+        tab: Colour
         label: Body Background Colour
         type: colorpicker
         assetVar: "bodyBackgroundColour"
 
     text_colour:
+        tab: Colour
         label: Text Colour
         type: colorpicker
         assetVar: "textColour"
 
     sidebar_background_colour:
+        tab: Colour
         label: Sidebar Background Colour
         type: colorpicker
         assetVar: "sidebarBackgroundColour"
 
     sidebar_text_colour:
+        tab: Colour
         label: Sidebar Text Colour
         type: colorpicker
         assetVar: "sidebarTextColour"
 
     sidebar_link_colour:
+        tab: Colour
         label: Sidebar Link Colour
         type: colorpicker
         assetVar: "sidebarLinkColour"
 
     main_content_text_colour:
+        tab: Colour
         label: Main Content Text Colour
         type: colorpicker
         assetVar: "mainContentTextColour"
 
     link_text_hover_colour:
+        tab: Colour
         label: Link Text Hover Colour
         type: colorpicker
         assetVar: "linkTextHoverColour"
 
     link_text_focus_colour:
+        tab: Colour
         label: Link Text Focus Colour
         type: colorpicker
         assetVar: "linkTextFocusColour"
 
     post_text_colour:
+        tab: Colour
         label: Post Text Colour
         type: colorpicker
         assetVar: "postTextColour"
 
     post_title_colour:
+        tab: Colour
         label: Post Title Colour
         type: colorpicker
         assetVar: "postTitleColour"
 
     social_link_colour:
+        tab: Colour
         label: Social Link Colour
         type: colorpicker
         assetVar: "socialLinkColour"
+
+    font_family:
+        tab: Assets
+        label: Font Family
+        type: text
+        comment: System loads fastest
+        default: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif"
+        assetVar: "fontFamily"
+
+    font_size:
+        tab: Assets
+        label: Body Font Size
+        type: text
+        comment: "Base font size - recommend em or %"
+        default: "1.3em"
+        assetVar: "fontSize"
+
+    content_font_size:
+        tab: Assets
+        label: Content Area Font Size
+        type: text
+        assetVar: "contentFontSize"
+
+    line_height:
+        tab: Assets
+        label: Line Height multiplier
+        type: number
+        default: 1.4
+        assetVar: "lineHeight"
+
+    load_icomoon:
+        tab: Assets
+        label: IcoMoon Social Icon Font
+        type: switch
+        default: true
