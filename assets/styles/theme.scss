@@ -1,4 +1,9 @@
+@import "_reset.scss";
+@import "_type.scss";
+
 body {
 	background: $bodyBackgroundColour;
 	color: $textColour;
+	line-height: $lineHeight;
+	font-family: $fontFamily;
 }

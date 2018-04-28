@@ -1,0 +1,10 @@
+a[href] {
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 0.1em solid;
+	transition: 0.1s ease border-bottom-color;
+	&:hover {
+		border-bottom-color: inherit;
+	}
+}
