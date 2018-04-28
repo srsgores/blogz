@@ -1,6 +1,7 @@
 @import "_reset.scss";
 @import "_type.scss";
 @import "_post.scss";
+@import "_layout.scss";
 
 body {
 	background: $bodyBackgroundColour;
@@ -9,3 +10,5 @@ body {
 	font-family: $fontFamily;
 	font-size: $fontSize;
 }
+
+@import "_print.scss";

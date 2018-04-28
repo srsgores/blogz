@@ -1,0 +1,22 @@
+%flex-container {
+	@media screen and (min-width: $breakpointDesktop) {
+		display: flex;
+	}
+}
+.site-wrapper {
+	@extend %flex-container;
+}
+
+%flexed {
+	flex: 1;
+}
+
+[role="banner"] {
+	@media screen and (min-width: $breakpointDesktop) {
+		flex-shrink: 0;
+	}
+}
+
+[role="main"] {
+	@extend %flexed;
+}

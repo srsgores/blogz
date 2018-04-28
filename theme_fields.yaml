@@ -166,6 +166,12 @@ fields:
         type: text
         assetVar: "contentFontSize"
         default: "1.15em"
+    content_padding:
+        tab: Assets
+        label: Content Padding
+        type: text
+        assetVar: "contentPadding"
+        default: "2em"
 
     line_height:
         tab: Assets
@@ -179,3 +185,10 @@ fields:
         label: IcoMoon Social Icon Font
         type: switch
         default: true
+
+    breakpoint_main:
+        tab: Assets
+        label: Desktop Breakpoint
+        type: text
+        default: 55em
+        assetVar: "breakpointDesktop"

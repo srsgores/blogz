@@ -15,18 +15,20 @@ description = "Default layout"
 		<meta itemprop="accessibilityAPI" content="ARIA">
 		{% partial "site/old-ie" %}
 		<a href="#main-content" class="visuallyhidden">Skip to main content</a>
-		<!-- Header -->
-		<header id="layout-header" role="banner" aria-label="Site Banner">
-			{% partial "site/header" %}
-			<!-- Sidebar -->
-			<nav id="layout-sidebar" role="navigation" aria-label="Site Navigation">
-				{% partial "site/sidebar" %}
-			</nav>
-		</header>
-		<!-- Content -->
-		<main role="main" aria-label="Main Content" id="main-content">
-			{% page %}
-		</main>
+		<div class="site-wrapper">
+			<!-- Header -->
+			<header id="layout-header" role="banner" aria-label="Site Banner">
+				{% partial "site/header" %}
+				<!-- Sidebar -->
+				<nav id="layout-sidebar" role="navigation" aria-label="Site Navigation">
+					{% partial "site/sidebar" %}
+				</nav>
+			</header>
+			<!-- Content -->
+			<main role="main" aria-label="Main Content" id="main-content">
+				{% page %}
+			</main>
+		</div>
 
 		<!-- Footer -->
 		<footer id="layout-footer" role="contentinfo" aria-label="Site Footer">
