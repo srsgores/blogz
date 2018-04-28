@@ -98,4 +98,13 @@
 			font-size: 85%;
 		}
 	}
+	&-complimentary {
+		padding: 2em;
+		box-sizing: border-box;
+		&-title {
+			font-weight: bold;
+			font-size: 1.5em;
+			margin: 0 0 0.5em 0;
+		}
+	}
 }

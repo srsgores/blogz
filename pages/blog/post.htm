@@ -27,8 +27,8 @@ categoryPage = "blog/category"
 <div class="post-container full">
 	{% partial "blog/post" post=post %}
 	{% if lastPost or nextPost %}
-		<aside role="complementary" aria-labelledby="complimentary-posts-title">
-			<h3 id="complimentary-posts-title">Other Related Posts</h3>
+		<aside role="complementary" aria-labelledby="complimentary-posts-title" class="post-complimentary">
+			<h3 class="post-complimentary-title">Other Related Posts</h3>
 			<ul class="posts related">
 				{% if lastPost %}
 					<li class="post-container">
