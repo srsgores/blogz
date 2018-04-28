@@ -1,6 +1,9 @@
 .post {
 	padding: $contentPadding;
 	box-sizing: border-box;
+	img {
+		max-width: 100%;
+	}
 	&-title {
 		font-size: 2.65em;
 		font-weight: bold;

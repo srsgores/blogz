@@ -28,6 +28,14 @@
 [role="main"] {
 	@extend %flexed;
 }
+
+[role="contentinfo"], [role="complimentary"] {
+	text-align: center;
+	padding: 0.5em;
+	box-sizing: border-box;
+	background: $bodyBackgroundColour - 7;
+}
+
 .post-container {
 	&:nth-of-type(2n) {
 		background: $bodyBackgroundColour - 7.5;
